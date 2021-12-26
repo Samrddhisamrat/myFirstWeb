@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Design of Your Dreams</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="logo" onclick="slowScroll('#top')">
+        <span>Design</span>
+    </div>
+    <div id="about">
+        <a href="#" title="MyJobs" onclick="slowScroll('#main')">My Jobs</a>        
+        <a href="#" onclick="slowScroll('#Design')" title="Design">Designs</a>
+        <a href="#" onclick="slowScroll('#About-Me')" title="About-Me">About Me</a>
+        <a href="#" onclick="slowScroll('#contacts')" title="Contacts">Contacts</a>
+    </div>
+    </header>
+
+    <div id="top">
+        <h1> Your design is our job  </h1>
+        <h3> We realize any desires and fantasies in life   </h3>
+    </div>
+
+    <div id="main">
+        <div class="intro">
+            <h4>Your design is my job!</h4>
+            <span>Individual approach to each client.</span>
+        </div>  
+        <div >
+            <span class="text">I meet with each client and interview their wishes and their vision of what their 
+            premises will look like. After that, we discuss all the details. Budget. 
+            And I get to work by signing the contract.And from this moment, the realization of Your dream will begin.</span>
+        </div> 
+    </div>
+
+    <div id="myjobs">         
+        <h2>My Jobs</h2>
+        
+        <div class="img">
+            <img src="qw.jpg">
+        </div> 
+        <div class="img">
+            <img src="w1.jpg">
+        </div> 
+        <div class="img">
+            <img src="w2.jpg">
+        </div> 
+        <div class="img">
+            <img src="w3.png">
+        </div> 
+        <div class="img">
+            <img src="w4.jpg">
+        </div> 
+        <div class="img">
+            <img src="w5.jpg">
+        </div> 
+        <div class="img">
+            <img src="w6.jpg">
+        </div> 
+        <div class="img">
+            <img src="wb1.jpg">
+        </div> 
+        <div class="img">
+            <img src="wb2.jpg">
+        </div> 
+        <div class="img">
+            <img src="wb3.jpg">
+        </div> 
+        
+        <div class="img">
+            <img src="wb5.jpg">
+        </div>
+
+    </div>      
+    
+    <div id="Design">
+        <h2>Designs</h2>
+        <h5> with us everything is simple</h5>
+
+        <div class="img">
+            <img src="https://www.zastavki.com/pictures/originals/2014/_Bright_pillows_on_the_couch_in_the_living_room_091305_.jpg" alt="">
+            <span>Minimalism. Nicely. Comfortably. Nothing extra.</span>
+        </div>
+        <div class="img">
+            <img src="https://yandex.ru/images/_crpd/AmlU6w004/283726TRzl/4vqzvjpCjbZhv1y76pH789iOjXZ3VjbC7LGq0Eq2632VnvXoV4AvrWg_VupJ1seIYBX5NQzy0dNzn_PiB0FFqKrrubwhQM7mJO0brfKarrnZhN0qIwM" alt="">
+            <span>Complete relaxation as in Paradise.</span>
+        </div>
+        <div class="img">
+            <img src="https://million-wallpapers.ru/wallpapers/4/98/10026614372038987561/gostinaya.jpg" alt="">
+            <span>Creative design</span>
+        </div>
+        <div class="img">
+            <img src="https://images.wallpaperscraft.ru/image/komnata_kreslo_kamin_interer_dizayn_sovremennost_66311_1600x900.jpg" alt="">
+            <span>Cozy design for reflection</span>
+        </div>
+    </div>
+
+    <div id="About-Me">         
+        <span class="about-me-title">About Me</span>
+            <img class="myphoto" src = "me.jpg">                     
+        
+            
+        <div><span class="mydescription"> <br> Hello, my dear client. <br> My name is Andrey. 
+        Since early childhood, I have always loved to do something in design. I always did some updates. Whether it's a drawing on your parents ' favorite Wallpaper or a picture with a landscape. I could do this for hours and it brought me joy and happiness.
+        So I graduated from high school and went to College. Where she successfully got her long - awaited profession-interior Designer. 
+        I will be happy to help you realize your most fantastic design dreams. With respect to every detail! </span> </div>
+            
+        <span class="my-signature"> Yours Sincerely, Andrey. </span>
+    </div>
+
+    <div id="contacts">
+        <center><h5>Contacts</h5></center>
+        <div class="contacts-container">
+            <h3 class="contacts-title"></h3>
+            <div> <span class="contacts-link-type"> C: </span> <a class="contacts-link" href="tel: +7-921-420-7654">+7-921-420-7654</a> </div> <br>
+            <div> <span class="contacts-link-type"> E: </span> <a class="contacts-link" href="mailto: bobcat2003@yandex.ru">bobcat2003@yandex.ru</a> </div>
+        </div>
+        <!-- <form id="form_input">
+            <label for="name">Name <span>*</span></label><br>
+            <input type="text" placeholder="Enter Your Name" name="name" id="name"><br>
+            <label for="email">Your Email <span>*</span></label><br>
+            <input type="email" placeholder="Enter Your Email" name="email" id="email"><br>
+            <label for="message">Message <span>*</span></label><br>
+            <textarea placeholder="Enter Your message" name="message" id="message"> </textarea> <br>
+            <button class="button">Send</button>
+        </form> -->       
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        function slowScroll(id) {
+            $('html, body').animate({
+                scrollTop: $(id).offset().top
+            },500)
+        }
+
+        $(document).on("scroll", function() {
+            if($(window).scrollTop () === 0)
+                $("header").removeClass("fixed");
+            else
+            $("header").attr("class", "fixed");
+        });
+    </script>
+</body>
+</html>
